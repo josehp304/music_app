@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>music player</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="music_player.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="content/logopng.png" class="logo" />
+        <div class="img-container">
+          <img src="/content/thumbnail.jpg" />
+        </div>
+        <div class="vol_container">
+          <input type="range" class="volume" step="0.1" />
+          <img src="content/volume.png" class="volume_icon" />
+        </div>
+        <audio controls loop class="song">
+          <source
+            src="content/Father Stretch My Hands Pt. 1 [_MIsk8VoNhM].mp3"
+          />
+        </audio>
+        <input type="range" class="timeline" />
+        <div class="playpause">
+          <img src="content/play.png" onclick="playPause()" id="play" />
+          <img src="content/pause.png" onclick="playPause()" id="pause" />
+        </div>
+      </div>
+    </div>
+    <script src="music_player.js"></script>
+  </body>
+</html>
